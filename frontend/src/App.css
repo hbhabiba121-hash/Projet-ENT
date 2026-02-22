@@ -1,0 +1,38 @@
+:root {
+  --est-green: #2E7D32;
+  --est-green-light: #4CAF50;
+  --est-green-soft: #E8F5E9;
+  --est-white: #FFFFFF;
+  --est-gray: #F5F5F5;
+  --est-text: #333333;
+  --est-shadow: 0 4px 6px rgba(46, 125, 50, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, var(--est-green-soft) 0%, var(--est-white) 100%);
+  color: var(--est-text);
+  min-height: 100vh;
+}
+
+/* Animation de fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
